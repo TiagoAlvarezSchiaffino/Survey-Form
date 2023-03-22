@@ -3,7 +3,7 @@
 
 /* Global style begins here */
 body {
-	background-image: url("images/background.jpg");
+	background-image: url("../images/background.jpg");
 	font-family: "Raleway", sans-serif;
 	width: clamp(300px, 100%, 100%);
   height: auto;
