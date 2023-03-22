@@ -1,0 +1,92 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* Global style begins here */
+body {
+	background-image: url("images/background.jpg");
+	font-family: "Raleway", sans-serif;
+	width: clamp(300px, 100%, 100%);
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  font-size: clamp(1vw, 1.1vw, 1.5vw);
+  line-height: 1.4em;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+/* Global style ends here */
+
+/* Header begins here */
+#header {
+  max-width: 750px;
+  margin: clamp(2rem, 5%, 4rem) auto;
+  padding: clamp(0.4rem, 1.2%, 0.6rem);
+}
+
+#title {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  text-align: center;
+  line-height: 1.2;
+  padding: clamp(0.4rem, 1.2%, 0.6rem);
+}
+
+#description {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  text-align: center;
+  padding: clamp(0.1rem, 0.3%, 0.2rem);
+}
+/* Header ends here */
+
+/* Main style begins here */
+#main {
+  padding: 0% clamp(10%, 20%, 20%) 0% clamp(10%, 20%, 20%);
+}
+
+label {
+  display: block;
+  margin-bottom: clamp(0.3rem, 1%, 0.5em);
+}
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      display: inline-block;
+      margin-right: clamp(0.2rem, 0.5%, 0.5em);
+    }
+    button {
+      border-radius: 4px;
+      padding: clamp(0.3rem, 0.8%, 0.5em) clamp(1em, 2%, 1.5em);
+      font-size: inherit;
+    }
+
+#survey-form {
+  background-color: rgba(34, 34, 66, 0.36);
+  padding: clamp(1.5rem, 4%, 3rem) clamp(2%, 2.5%, 2.5rem);
+  border-radius: clamp(4px, 2vw, 7px);
+}
+
+#submit {
+  background: #22d87d;
+  color: #fff;
+  padding: clamp(0.4rem, 1.2%, 0.7rem);
+  font-size: clamp(1rem, 1.15rem, 1.4rem);
+  cursor: pointer;
+}
+
+#submit:hover {
+  background: rgb(9, 168, 89);
+}
+
+.form {
+  width: 100%;
+  padding: clamp(0.4rem, 1.2%, 0.7rem);
+  border-radius: 6px;
+  font-size: 1.0rem;
+  border: none;
+}
+
+textarea {
+	resize: vertical;
+}
+/* Main style ends here */

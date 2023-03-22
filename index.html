@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial.scale=1.0" shrink-to-fit="no">
+	<title>Survey Form</title>
+    <link rel="stylesheet" href="app.css">
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="custom-responsive-style.css">
+</head>
+<body>
+	<div id="header">
+    <h1 id=title>Employee Engagement Survey</h1>
+    <p id="description">Welcome everyone! Thank you for receiving us again on your screen. This is one of our many spaces to keep in contact. Time to flow!</p>
+    </div>
+    <div id="main">
+        <form id="survey-form">
+        <div id="input-fields">
+            <label id="name-label"><b>Name:</b></label>
+            <input id="name" type="name" name="name" class="form" required placeholder="Full Name"><br>
+            <br>
+            <label id="email-label"><b>Email:</b></label>
+            <input id="email" type="email" name="email" class="form" required placeholder="example@mail.com"><br>
+            <br>
+            <label id="number-label"><b>Age:</b></label>
+            <input id="number" type="number" name="number" class="form" min="22" max="39"  required placeholder="22+">
+         </div>
+         <div id="dropdown-div"><br>
+            <label id="dropdown-label"><strong>Department at you work: </strong></label><br>
+            <select id="dropdown" name="code-lang" class="form">
+            	<option value="SMEs">Advice to SMEs</option>
+                <option value="Audit">Audit</option>
+                <option value="Business">Business Consulting</option>
+                <option value="Consulting">Consulting</option>
+                <option value="Advice">Legal/Tax Advice</option>
+                <option value="Outsourcing">Outsourcing</option>
+                <option value="Assurance">Risk Assurance</option>
+                <option value="RRHH">RR.HH.</option>
+                <option value="Sustainability">Sustainability</option>
+            </select>
+         </div>
+         <div id="button-area">
+             <br>
+            <label id="location-label"><b>Primary Location:</b></label><br>
+            <input type="radio" class="radio-inline" name="country" value="Canada" checked> Canada, Toronto.<br>
+            <input type="radio" class="radio-inline" name="country" value="Denmark"> Denmark, Copenhague.<br>
+            <input type="radio" class="radio-inline" name="country" value="Germany"> Germany, Berlin.<br>
+            <input type="radio" class="radio-inline" name="country" value="Usa"> United States, Washington.
+          <div id="button-area"><br>
+            <label id="workplace-label"><b>My workplace seems like... </b></label><br>
+            <input type="radio" name="opinion" value="great"> A clean and quite place where I can communicate to colleagues and perform my tasks in a concentrated manner.<br><br>
+            <input type="radio" name="opinion" value="frustated"> A place where we are offered important tools, but we need others. I just feel at some point that it doesn't allow me to be or take advantage of all my creativity. The areas are very separated and day-to-day life is difficult.<br><br>
+            <input type="radio" name="opinion" value="overwhelmed"> A place where productivity is low and mood constantly falls. I believe and support the idea of ​​a café style environment with hot desks at least 2 times a week.<br><br>
+          </div>
+
+          <div id="dropdown"><br><br>
+            <label id="dropdown-label"><strong>On a scale of 1-10, how excited are you about coming to work or with your current perks? </strong></label><br>
+            <select id="dropdown" name="range" class="form"><br><br>
+                <option value="0">0 (Request an interview)</option>
+                <option value="1">1 (Very unsatisfied)</option>
+                <option value="1-3">1-3 (Unsatisfied)</option>
+                <option value="3-4">3-4 (Moderately unsatisfied)</option>
+                <option value="4">4 (Neither satisfied nor unsatisfied)</option>
+                <option value="4-6">4-6 (Moderately satisfied)</option>
+                <option value="7-8">7-8 (Satisfied)</option>
+                <option value="9-10">9-10 (Very satisfied)</option>
+            </select>
+         </div>
+          <div id="button-area"><br><br>
+            <label id="development-label"><b>Check the boxes that contribute the most to your development.</b></label><br>
+            <input type="checkbox" name="job1" value="CEO"> CEO.<br>
+            <input type="checkbox" name="job2" value="Senior Manager"> Senior Manager.<br>
+            <input type="checkbox" name="job3" value="Manager"> Manager.<br>
+            <input type="checkbox" name="job4" value="Assistant Manager"> Assistant Manager.<br>
+            <input type="checkbox" name="job5" value="Colleagues"> Colleagues.<br>
+          </div>
+
+
+          <div id="ending"><br><br>
+            <label id="comments-label">How can we help to improve your engagement at work? Also tell us if you are often stressed with deadlines and workload.</label><br>
+            <textarea style= height:120px; class="form" required placeholder="Please feel free to write a review..."></textarea><br><br>
+            <input id="submit" type="submit"  class="form" value="Submit">
+          </div>
+        </form>
+    </div>
+</body>
+</html>

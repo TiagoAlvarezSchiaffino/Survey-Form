@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+
+/* Custom properties */
+:root {
+  --black: #393939;
+}
+
+/* Adapting to Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --black: #ececec;
+  }
+}
+
+/* CSS Reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  }
+
+/* Fixing font problems and placement of form */
+form, input, textarea, select, label {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  display: block;
+}
